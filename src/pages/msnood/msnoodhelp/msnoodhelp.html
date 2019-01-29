@@ -1,0 +1,80 @@
+<!--
+  Generated template for the MsnoodhelpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar hideBackButton>
+
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        
+    <ion-title>{{ 'add help' | translate:param}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+  <ion-card>
+    
+    <ion-card-content>
+        <ion-card-header>
+            <h1>Add Help</h1> 
+            <ion-label>{{request_date}}</ion-label>
+          </ion-card-header>
+            <ion-list-header>
+                Category
+            </ion-list-header>
+
+
+            
+      <select (change)="selectCategory($event)">
+        <option value="monetary">monetary</option>
+        <option value="materialistic">materialistic</option>
+        <option value="other">other</option>
+      </select>
+      <p>you select : {{category}}</p>
+
+      <select ion-select (change)="selectStatus($event)">
+        <option value="sick">sick</option>
+        <option value="old">old</option>
+        <option value="widow">widow</option>
+        <option value="Devorced">Devorced</option>
+      </select>
+      <p>you select : {{masnod_status}}</p>
+
+      
+
+
+
+      
+
+      <h2>Description</h2>
+    <ion-textarea placeholder="enter any thing you want " rows="10" [(ngModel)]="request_description"></ion-textarea>
+
+    <h2>Attachments</h2>
+    <div class="rowButton">
+        <button ion-button color="dark" (click)="getphoto()" ion-left block class="fbB"> 
+            <ion-icon name="add"></ion-icon>
+            <div>take a photo</div>
+          </button>
+          
+          <button ion-button color="dark" (click)="getphotofromgalary()" ion-left block class="fbB"> 
+              <ion-icon name="add"></ion-icon>
+              <div>get photo from gallary</div>
+            </button>
+      </div>
+      <img src="{{ myphoto }}"/>
+      <!-- <p align="center"> {{ myphoto }} </p> -->
+      <button ion-button color="secondary" ion-left block class="fbB" (click)="addhelp()"> 
+          <ion-icon name="add"></ion-icon>
+          <div>ADD</div>
+        </button>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,36 @@
+// http://ionicframework.com/docs/theming/
+.activeHighLight{
+    background-color: #2274b8 ;
+    color: #ffffff
+}
+// .menu-inner .item {
+//     background-color:transparent;
+// }
+.menu-inner > ion-header, 
+    .menu-inner > ion-content, 
+    .menu-inner > ion-footer {
+        text-align: center;
+        background-color: #ffffff;
+    }
+    .menu.menu-left{
+        width: calc(100% - 70px) !important;
+    }
+    .menu-open .menu-content{
+        transform: translate3d(calc(100% - 70px), 0px, 0px) !important;
+    }
+    .logo-menu{
+        margin-top: 50px;
+    }
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.

@@ -1,0 +1,20 @@
+{
+  "TITLE" : "المساندات",
+    "HELLO" : " مرحبا",
+    "SEGMENT1" : "مسانده ماليه",
+    "SEGMENT2" : "احتاج 300 جنيه كل شهر لدفع الايجار",
+    "SEGMENT3" : "300 جنيه",
+    "signUp" :  "تسجيل",
+    "login" :"دخول",
+    "myAccount" : "حسابي",
+    "Confirm aid" : "تأكيد المساندات",
+    "notifications" : "إشعارات",
+    "category" : "مساندات",
+    "monetary" : "مالي",
+    "materialistic" : "مادي",
+    "other" : "أخري",
+    "toast" : "تم التسجيل بنجاح",
+    "add help" : "إضافة مساعده",
+    "status" : "الحاله",
+    "your request added successfully" : "تم إضافة الطلب بنجاح"
+}

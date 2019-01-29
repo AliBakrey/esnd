@@ -1,0 +1,20 @@
+{
+  "TITLE" : "Categories",
+    "HELLO" : " Hello",
+    "SEGMENT1" : " Finencial Aid",
+    "SEGMENT2" : " I want 300 GP monthly for rent",
+    "SEGMENT3" : " Price 300 GP ",
+    "signUp" :  "SIGHN UP",
+    "login" :"LOGIN",
+    "myAccount" : "myAccount",
+    "Confirm aid" : "Confirm aid",
+    "notifications" : "notifications",
+    "category" : "category",
+    "monetary" : "monetary",
+    "materialistic" : "materialistic",
+    "other" : "other",
+    "toast" : "Your registration was successful",
+    "add help" : "add help",
+    "status" : "status",
+    "your request added successfully" : "your request added successfully"
+}

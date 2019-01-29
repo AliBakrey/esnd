@@ -1,0 +1,42 @@
+page-edit-profile {
+
+    .icon-save{
+        margin: 0px 10px 0px 10px;
+    }
+    .background{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(10deg,#4e5efc,#4ee7fc);
+    }
+    .scroll-content{
+        text-align: center;
+    }
+    ion-card.card{
+        background: rgba(232, 230, 230, 0.6px);
+        border-radius: 10px;
+    }
+    ion-item{
+        margin-bottom: 20px;
+    }
+    .item{
+        background: rgba(232, 230, 230, 0px);
+    }
+    ion-input{
+        border-bottom: #4e5efc solid 1px;
+    }
+    h1{
+        color: #fff;
+        font-size: 3em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: lighter;
+    }
+    .fbB{
+        margin-bottom: 10px;
+    }
+    #btn{
+        margin: 50px 0px 15px 0px
+    }
+    toast{
+        text-align: center;
+    }
+}

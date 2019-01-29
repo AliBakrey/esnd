@@ -1,0 +1,28 @@
+<!-- <ion-menu [content]="content" persistent="true" no-padding> -->
+<ion-menu *ngIf="this.platform.dir()==='ltr'"  side="left"  [content]="content" persistent="true">
+    <ion-content>  
+        <img class="logo-menu" src="../assets/imgs/logo-menu3.png"/>          
+      <ion-list no-lines>
+            <button menuClose ion-item *ngFor="let p of pages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
+                <ion-icon [name]="p.icon" item-left></ion-icon>
+                    {{p.title}}
+                    <br/>
+                  </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-menu *ngIf="this.platform.dir()==='rtl'"  side="right" [content]="content" persistent="true">
+      <ion-content>  
+          <img class="logo-menu" src="../assets/imgs/logo-menu3.png"/>          
+        <ion-list no-lines>
+              <button menuClose ion-item *ngFor="let p of pages" [class.activeHighLight]="checkActive(p)" (click)="openPage(p)">
+                  <ion-icon [name]="p.icon" item-left></ion-icon>
+                      {{p.title}}
+                      <br/>
+                    </button>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  
+  <ion-nav [root]="rootPage" #content></ion-nav>

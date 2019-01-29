@@ -1,0 +1,7 @@
+{
+  "name": "esnd",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

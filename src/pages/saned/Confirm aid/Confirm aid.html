@@ -1,0 +1,162 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="animated flipInX">
+      {{ 'Confirm aid' | translate:param}}
+    </ion-title>
+  </ion-navbar>
+  <!-- for segment-->
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="segment">
+      <ion-segment-button value="seg1">
+        segment1
+      </ion-segment-button>
+      <ion-segment-button value="seg2">
+        segment2
+      </ion-segment-button>
+      <ion-segment-button value="seg3">
+        segment3
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <!-- end segment-->
+</ion-header>
+
+<ion-content >
+
+  <!-- for segment-->
+<div [ngSwitch]="segment">
+  <!-- the first segment -->
+  <ion-list *ngSwitchCase="'seg1'">
+    <ion-item >
+      <ion-card  class="animated slideInDown">
+        <div class="img2">
+            <ion-thumbnail item-letf>
+                <img src="assets/imgs2/3.jpg"/>
+                
+              </ion-thumbnail>
+              
+        </div>
+        <h2>{{ 'monetary' | translate:param}}</h2>
+        
+        <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+        <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+        
+      </ion-card>
+          <ion-card class="animated slideInRight">
+              <div class="img2">
+                  <ion-thumbnail item-letf>
+                      <img src="assets/imgs2/3.jpg"/>
+                    </ion-thumbnail>
+                    
+              </div>
+              <h2>{{ 'monetary' | translate:param}}</h2>
+              <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+              <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+            </ion-card>
+      <ion-card *ngFor="let Aid of [3,3,3,3,3]" class="animated slideInUp">
+      <div class="img2">
+          <ion-thumbnail item-letf>
+              <img src="assets/imgs2/{{Aid}}.jpg"/>
+            </ion-thumbnail>
+      </div>
+      <h2>{{ 'monetary' | translate:param}}</h2>
+      <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+      <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+    </ion-card>
+    
+    
+    </ion-item>
+    </ion-list>
+  <!-- the second segment -->
+  <ion-list *ngSwitchCase="'seg2'">
+    <ion-item >
+      <ion-card  class="animated slideInDown">
+        <div class="img2">
+            <ion-thumbnail item-letf>
+                <img src="assets/imgs2/2.jpg"/>
+              </ion-thumbnail>
+        </div>
+        <h2>{{ 'materialistic' | translate:param}}</h2>
+        <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+        <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+      </ion-card>
+          <ion-card class="animated slideInRight">
+              <div class="img2">
+                  <ion-thumbnail item-letf>
+                      <img src="assets/imgs2/2.jpg"/>
+                    </ion-thumbnail>
+              </div>
+              <h2>{{ 'materialistic' | translate:param}}</h2>
+              <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+              <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+            </ion-card>
+      <ion-card *ngFor="let Aid of [2,2,2,2,2]" class="animated slideInUp">
+      <div class="img2">
+          <ion-thumbnail item-letf>
+              <img src="assets/imgs2/{{Aid}}.jpg"/>
+            </ion-thumbnail>
+      </div>
+      <h2>{{ 'materialistic' | translate:param}}</h2>
+      <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+      <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+    </ion-card>
+    
+    
+    </ion-item>
+    </ion-list>
+  <!-- the third segment -->
+  <ion-list *ngSwitchCase="'seg3'">
+    <ion-item >
+      <ion-card  class="animated slideInDown">
+        <div class="img2">
+            <ion-thumbnail item-letf>
+                <img src="assets/imgs2/1.jpg"/>
+              </ion-thumbnail>
+        </div>
+        <h2>{{ 'other' | translate:param}}</h2>
+        <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+        <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+      </ion-card>
+          <ion-card class="animated slideInRight">
+              <div class="img2">
+                  <ion-thumbnail item-letf>
+                      <img src="assets/imgs2/1.jpg"/>
+                    </ion-thumbnail>
+              </div>
+              <h2>{{ 'other' | translate:param}}</h2>
+              <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+              <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+            </ion-card>
+      <ion-card *ngFor="let Aid of [1,1,1,1,1]" class="animated slideInUp">
+      <div class="img2">
+          <ion-thumbnail item-letf>
+              <img src="assets/imgs2/{{Aid}}.jpg"/>
+            </ion-thumbnail>
+      </div>
+      <h2>{{ 'other' | translate:param}}</h2>
+      <p class="p">{{ 'SEGMENT2' | translate:param}}</p>
+      <p class="animated slideInDown" style="color: #5092c5">{{ 'SEGMENT3' | translate:param}}</p>
+    </ion-card>
+    
+    
+    </ion-item>
+    </ion-list>
+  
+</div>
+ 
+      
+    <!-- Range  -->
+    <!-- pin code to known us what the progress we have  -->
+
+    <ion-range [(ngModel)]="Range1" min="1" max="200" color="danger" step="50" snaps="true" pin= "true">
+      <ion-icon range-left small name="sunny"></ion-icon>
+      <ion-icon range-right  name="sunny"></ion-icon>
+    </ion-range>
+    <ion-range [(ngModel)]="Range2" min="1" max="200" color="danger" step="50" snaps="true" pin= "true">
+      <ion-icon range-left small >1</ion-icon>
+      <ion-icon range-right small>100</ion-icon>
+    </ion-range>
+
+     
+  <!-- </ion-list> -->
+</ion-content>

@@ -1,0 +1,58 @@
+<ion-content class="bg-image no-scroll" padding>
+    <img src="assets/imgs/LOGO.png" class="logo">
+  <!-- <ion-card>
+    <ion-card-header>
+      <h1>LOGIN</h1> 
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-lines>
+        <ion-item>
+          <ion-label floating>email</ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label floating>PassWord</ion-label>
+          <ion-input type="password" [(ngModel)]="password">123456</ion-input>
+        </ion-item>
+        <ion-item>
+          <p>Forgot Password? <a>Get Here</a></p>
+        </ion-item>
+        <button ion-button color="primary" block outline (click)="login()">LOGIN</button>
+      </ion-list>
+
+      <b>OR</b>
+      <!-    for facebook 
+      <button ion-button color="secondary" ion-left block class="fbB"> 
+        <ion-icon name="logo-facebook" class="icon-facebook"></ion-icon>
+        <div>Login with facebook</div>
+      </button>
+      <p class="signup">Click<a (click)="signup()"> Here</a>to signup</p>
+      <!- for google 
+      <button ion-button color="danger" ion-left block>
+          <ion-icon name="logo-google"></ion-icon>
+          <div>Login with google</div>
+        </button> 
+    </ion-card-content>
+  </ion-card> -->
+  <p class="text" style="font-size:16px; color:white">LogIn</p>
+
+    <div class="login-input" ngNativeValidate>
+      <div class="first-input">
+        <ion-item>
+          <ion-input required type="text" [(ngModel)]="email" placeholder="User Name or EMail Address"></ion-input>
+        </ion-item>
+      </div>
+      <div class="second-input">
+        <ion-item class="pass-input">
+            <ion-input  type="PassWord" [(ngModel)]="password" placeholder="PassWord" ></ion-input>
+          </ion-item>
+        </div>
+    </div>
+
+      
+
+      <div text-center class="div-btn-login">
+          <button  (click)="login()" class="btn-login" ion-button color="buttons" round >LogIn
+            </button>
+        </div>
+</ion-content>

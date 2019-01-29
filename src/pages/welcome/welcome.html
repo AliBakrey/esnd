@@ -1,0 +1,47 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+        <img src="../assets/imgs/logo-1.jpg">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+<ion-content >
+
+<ion-slides pager loop="true" autoplay="2000" dir="ltr">
+ 
+  <ion-slide>
+    <div class="slideN1">
+      <img src="../assets/imgs/LOGO.png"/>
+      <h2>About Us</h2>
+      <p>ESND Project is the first 2018 consulting engagement for development
+         of a Business Requirement Document surrounding the technologies
+          Develop ESND Application.</p>
+    </div>
+  </ion-slide>
+  <ion-slide>
+      <div class="slideN1">
+        <img src="../assets/imgs/1.jpg"/>
+        <h2>SIGNUP AS MASNOOD</h2>
+        <button ion-button block (click)="signUpmasnood()" color="light" clear>{{ 'signUp' | translate:param}}</button>
+        <p>ESND Project is the first 2018 consulting engagement for development
+          of a Business Requirement Document surrounding the technologies
+           Develop ESND Application.</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+        <div class="slideN1">
+          <img src="../assets/imgs/3.jpg"/>
+          <h2>SIGNUP AS SANED</h2>
+          <button ion-button block (click)="signUp()" color="light" clear>{{ 'signUp' | translate:param}}</button>
+          <p>ESND Project is the first 2018 consulting engagement for development
+             of a Business Requirement Document surrounding the technologies
+              Develop ESND Application.</p>
+        </div>
+      </ion-slide>
+</ion-slides>
+
+<div class="rowButton">
+    <button ion-button block (click)="login()" color="light" clear>{{ 'login' | translate:param}}</button>
+    <!-- <button ion-button block (click)="signUp()" color="light" clear>{{ 'signUp' | translate:param}}</button> -->
+  </div>
+</ion-content>
